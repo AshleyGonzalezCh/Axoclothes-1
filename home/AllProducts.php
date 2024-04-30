@@ -4,7 +4,7 @@ require '../config/database.php';
 $db = new Database();
 $con = $db->conectar();
 
-$sql = $con->prepare("SELECT id, nombre, precio FROM productos WHERE activo=1");
+$sql = $con->prepare("SELECT id, nombre, price FROM producto WHERE activo=1");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
@@ -104,7 +104,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                                     <h5 class="fw-bolder" id="titulo"><?php echo $row['nombre'];?></h5>
                                     <p id="tipo">----</p>
                                     <!-- Product price-->
-                                    <span id="precio"><?php echo number_format($row['precio'],2,'.',',');?></span>
+                                    <span id="precio"><?php echo number_format($row['price'],2,'.',',');?></span>
                                 </div>
                             </div>
                             <!-- Product actions-->

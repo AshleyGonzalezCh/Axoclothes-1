@@ -1,9 +1,9 @@
 <?php
 class Database {
-    private $hostname = "localhost:3307";
-    private $database = "axoclothes";
+    private $hostname = "localhost";
+    private $database = "axoclothes2";
     private $username = "root";
-    private $password = "1234";
+    private $password = "";
     private $charset = "utf8";
 
     function conectar()
