@@ -85,14 +85,12 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                         <?php 
 
                         $id = $row['id'];
-                        $imagen = "images/$id/product1.jpg";
+                        $imagen = "images/$id/product.jpg";
                         if(!file_exists($imagen)){
                             $imagen = "images/no-photo.jpg";
                         }
                         ?>
                             <!-- Product image-->
-                            <figure class="zoom" style="background-image: url(../images/product\ 01.jpg)"
-                                onmousemove="zoom(event)">
                                 <!-- Descuento-->
                                 <div class="badge bg-dark text-white position-absolute top-0 end-0 mt-1 me-1"></div>
                                 <img class="card-img-top zoom" src="<?php echo $imagen;?>" alt="..." />

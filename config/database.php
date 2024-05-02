@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $hostname = "localhost";
-    private $database = "axoclothes2";
+    private $database = "axoclothes";
     private $username = "root";
     private $password = "";
     private $charset = "utf8";
